@@ -56,4 +56,7 @@ setlocal foldenable
 setlocal foldlevel=0
 setlocal foldcolumn=0
 
+set textwidth=80
+set spell
+
 "  vim:set sw=2:
