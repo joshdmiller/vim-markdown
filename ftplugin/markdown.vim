@@ -1,7 +1,7 @@
 " Vim filetype plugin
 " Language:		Markdown
-" Maintainer:		Tim Pope <vimNOSPAM@tpope.org>
-" Last Change:		2013 May 30
+" Maintainer:		Josh David Miller <josh@joshdavidmiller.com>
+" Last Change:		2014 March 04
 
 if exists("b:did_ftplugin")
   finish
@@ -47,17 +47,7 @@ func! Foldexpr_markdown(lnum)
     endif
 endfunc
 
-setlocal foldexpr=Foldexpr_markdown(v:lnum)
-setlocal foldmethod=expr
-
-"---------- everything after this is optional -----------------------
-" change the following fold options to your liking
-" see ':help fold-options' for more
-setlocal foldenable
-setlocal foldlevel=0
-setlocal foldcolumn=0
-
-set textwidth=80
-set spell
+" setlocal foldexpr=Foldexpr_markdown(v:lnum)
+" setlocal foldmethod=expr
 
 "  vim:set sw=2:
